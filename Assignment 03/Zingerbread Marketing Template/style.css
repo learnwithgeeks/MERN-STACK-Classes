@@ -1,0 +1,309 @@
+body
+{
+  font-family: 'Raleway', sans-serif;
+  overflow-x:hidden;
+}
+header
+{
+  border-bottom:2px solid #3792A1;
+  background-image: url(logo.jpg);
+  background-repeat:no-repeat;
+  background-position:20%;
+  padding-top:40px;
+  padding-bottom:10px;
+}
+header .row p
+{
+  font-size:18pt;
+}
+.banner
+{
+  background-image:url(section.jpg);
+  padding:5%;
+}
+.banner .row .pta
+{
+  font-family: "Raleway SemiBold";
+  border:2px solid #3792A1;
+  text-align:center;
+  padding-left:40px;
+  padding-right:40px;
+  border-bottom-width:4px;
+  border-top-width:4px;
+  font-size:20pt;
+  color: #FFCD05;
+}
+.banner .row .ptb
+{
+  font-size:20pt;
+  text-align:center;
+  color: white;
+}
+.instant
+{
+  background-color: #FFCD05;
+  padding-top:40px;
+  margin-top:-40px;
+  padding-bottom:10px;
+  border-bottom:4px solid #3792A1;
+  font-family: "Raleway SemiBold";
+}
+.instant .btna input
+{
+  border:2px solid #3792A1;
+  color:#3792A1;
+  border-radius:5px;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-left:20px;
+}
+.instant .btnb input
+{
+  border:2px solid #3792A1;
+  color:#3792A1;
+  border-top-right-radius:5px;
+  border-top-right-radius:5px;
+  padding-top:10px;
+  padding-left:20px;
+  padding-bottom:10px;
+}
+.button span::after
+{
+  content:" |";
+}
+.fiveincreablelessons
+{
+  text-align: center;
+}
+.fiveincreablelessons .heading
+{
+  color: #3792A1;
+  padding-top:10px;
+  font-size:20pt;
+}
+.fiveincreablelessons .description
+{
+  font-family:"Open Sans";
+}
+.fiveincreablelessons .dd
+{
+  font-size:14pt;
+  font-family:"Open Sans";
+  text-align:left;
+}
+.fiveincreablelessons .dd b
+{
+  color: #3792A1;
+  font-weight:bolder;
+}
+.fiveincreablelessons .long .heading
+{
+  border-top:2px solid #3792A1;
+  color: #3792A1;
+  font-size:20pt;
+}
+.fiveincreablelessons .long .description
+{
+  font-size:14pt;
+}
+.fiveincreablelessons .long .des
+{
+  text-align:left;
+  font-size:14pt;
+}
+.fiveincreablelessons .long .des strong
+{
+  color: #A3A3A3;
+}
+.fiveincreablelessons .long .des b
+{
+  color: #3792A1;
+}
+.other .p
+{
+  padding-top:20px;
+  padding-bottom:10px;
+  padding-left:5px;
+  padding-right:5px;
+  border-bottom:1px solid #3792A1;
+  color: #3792A1;
+  font-size:18pt;
+}
+.other .a
+{
+  padding-top:20px;
+  padding-bottom:10px;
+  color: #3792A1;
+  font-size:20pt;
+}
+.client .a
+{
+  background-color: #BDC3C7;
+  background-image:url(one.jpg);
+  background-repeat: no-repeat;
+  background-position:27%;
+  text-align:left;
+  padding-bottom:130px;
+  border:2px solid #3792A1;
+}
+.client .a p
+{
+  padding-top:5px;
+}
+.client .a b
+{
+  color:white;
+}
+.client .b
+{
+  background-color: #89D5CE;
+  background-image:url(two.jpg);
+  background-repeat: no-repeat;
+  background-position:80%;
+  padding-bottom:130px;
+  text-align:left;
+  border:2px solid #3792A1;
+}
+.client .b p
+{
+  padding-top:5px;
+}
+.client .b b
+{
+  color:white;
+}
+.client .c
+{
+  background-color: #61A4D7;
+  background-image:url(three.jpg);
+  background-repeat: no-repeat;
+  background-position:25%;
+  text-align:left;
+  padding-bottom:130px;
+  border:2px solid #3792A1;
+}
+.client .c p
+{
+  padding-top:5px;
+}
+.client .c b
+{
+  color:white;
+}
+.client .d
+{
+  background-color: #8BC240;
+  background-image:url(four.jpg);
+  background-repeat: no-repeat;
+  background-position:80%;
+  text-align:left;
+  padding-bottom:130px;
+  border:2px solid #3792A1;
+}
+.client .d p
+{
+  padding-top:5px;
+}
+.client .d b
+{
+  color:white;
+}
+.client .e p
+{
+  font-size:18pt;
+  padding-top:20px;
+  color: #3792A1;
+}
+.client .f
+{
+  padding-bottom:30px;
+}
+.instantaccess
+{
+  font-size:18pt;
+  border-top:1px solid #3792A1;
+  color: #3792A1;
+}
+.vvk
+{
+  clear: both;
+  padding:10px;
+  background-color: #FFCD05;
+  font-family: "Raleway SemiBold";
+}
+.vvk .btna input
+{
+  border:2px solid #3792A1;
+  color:#3792A1;
+  border-radius:5px;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-left:20px;
+}
+.vvk .btnb input
+{
+  border:2px solid #3792A1;
+  color:#3792A1;
+  border-top-right-radius:5px;
+  border-top-right-radius:5px;
+  padding-top:10px;
+  padding-left:20px;
+  padding-bottom:10px;
+}
+.button span::after
+{
+  content:" |";
+}
+.stepone,.steptwo
+{
+  border: 1px solid #3792A1;
+}
+.stepone
+{
+  margin-bottom:10px;
+}
+.steptwo
+{
+  text-align: center;
+  margin-top:20px;
+}
+.stepone b,.steptwo b
+{
+  font-size:17pt;
+  color:  #3792A1;
+}
+.border
+{
+  border-left:1px dotted #3792A1;
+  padding-top:100px;
+  margin-left:20px;
+}
+.borders
+{
+  border-left:1px dotted #3792A1;
+  padding-bottom:100px;
+  margin-left:20px;
+}
+.remaining .a , .remaining .b
+{
+  font-size:12pt;
+}
+.remaining .b
+{
+  padding-top:20px;
+  font-size:15pt;
+}
+.remaining .b b
+{
+  color: #3792A1;
+}
+.feedback
+{
+  background-color: #F2F6F7;
+  background-image: url(discuss.png);
+  border-top:2px solid #3792A1;
+  background-size:contain;
+  padding-bottom:320px;
+  background-position:center;
+  background-repeat:no-repeat;
+}
