@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="boot/css/bootstrap.css">
+  <title>JavaScript Todo List</title>
+</head>
+<body>
+<div class="container">
+  <div class="panel panel-primary" style="padding-bottom:40%;">
+  <input class="form-control" type='text' id='input' placeholder="What Todo?" style="padding:5%;" focus />
+  <button class="btn btn-primary" type='submit' onclick='addTodo()' style="padding:2%;">Add Todo</button>
+  <button class="btn btn-danger" role="group" type='submit' onclick='cleared()' style="padding:2%;">Clear Todo</button>
+  <div id='add' class="text-warning"></div>
+  </div>
+</div>
+  <script type='text/javascript' src='js/main.js'></script>
+</body>
+</html>
