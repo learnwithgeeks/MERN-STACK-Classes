@@ -1,0 +1,39 @@
+var database = firebase.database();
+var x = location.hash;
+var z = x.substring(1);
+var c = document.getElementById('jumb');
+c.innerHTML=z;
+var container;
+var b;
+var comment ;
+var myVar = setInterval(load, 10000);
+load();
+function logout()
+{
+  window.location="index.html#"+z;
+}
+function addComment()
+{
+  container = document.getElementById('containerdo');
+  comment = document.getElementById('commentinformation').value;
+  if(comment!='')
+  {
+  save();
+  load();
+}
+}
+function save()
+{
+  b=database.ref('comment/'+z).push(
+      comment
+  );
+}
+function load()
+{
+  var container = document.getElementById('containerdo');
+  database.ref('comment/'+z).once('value').then(function(snapshot) {
+    for (var i in snapshot.val()) {
+    container.innerHTML += "<div id="+i+"><img src='./img/arrow.png' width='23px' id='img'><h4 id='topi'>"+snapshot.val()[i]+"</h4></div>";
+}});
+    container.innerHTML='';
+}

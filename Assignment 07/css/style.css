@@ -1,0 +1,63 @@
+body::-webkit-scrollbar {
+    width:1.3em;
+}
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 6px 6px 6px rgba(0,0,0,0.1);
+    border-top-right-radius:4px;
+    border-bottom-left-radius:4px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(100,100,100,0.4) ;
+  border-radius:3px;
+}
+body
+{
+  background-image: url(../img/bg-img.jpg);
+  background-size: cover;
+  background-repeat:no-repeat;
+}
+.jumbotron
+{
+  background-color: rgba(11,11,11,0.1);
+}
+.input-group
+{
+  padding:10px;
+  background-color: rgba(11,11,11,0.1);
+}
+#container1,#container2,
+{
+  text-align: center;
+}
+#containerdo
+{
+  background-color: rgba(11,11,11,0.1);
+  height:45%;
+  border-radius:5px;
+  overflow-y:scroll;
+}
+#containerdo::-webkit-scrollbar {
+    width: 0.7em;
+}
+#containerdo::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 6px 6px 6px rgba(0,0,0,0.1);
+    border-top-right-radius:4px;
+    border-bottom-left-radius:4px;
+}
+#containerdo::-webkit-scrollbar-thumb {
+  background-color: rgba(100,100,100,0.8) ;
+  border-radius:3px;
+}
+#topic a,#comment
+{
+  color: white;
+}
+#commentinformation
+{
+  width:100%;
+  height:30%;
+}
+#img
+{
+  float: left;
+}

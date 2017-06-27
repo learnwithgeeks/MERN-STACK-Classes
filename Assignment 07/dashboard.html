@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Forum App</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="jumbotron">
+      <h1 id="jumb">Forum Application</h1>
+      <p>Topic's Section</p>
+      <button type="button" name="button" class="btn btn-warning" onclick="logout()">Logout</button>
+    </div>
+  </div>
+  <div id="containerdo" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 "></div>
+  <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-2 col-xs-6 col-xs-offset-2">
+  <button type="button" name="button" class="btn btn-danger btn-group-justified" data-toggle="modal" data-target="#myModal">Add New Topic</button>
+  </div>
+  <div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Topic Information</h4>
+      </div>
+      <div class="modal-body">
+        <textarea name="name" rows="8" cols="80" id="topicinformation" placeholder="Write some information about your topic here"></textarea>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default btn-left" data-dismiss="modal" onclick="addTopic()">Add</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCOZ1sqBldrAr2sDeB7Tjg3NPW3ksVlJPw",
+    authDomain: "forum-application.firebaseapp.com",
+    databaseURL: "https://forum-application.firebaseio.com",
+    projectId: "forum-application",
+    storageBucket: "forum-application.appspot.com",
+    messagingSenderId: "266496813834"
+  };
+  firebase.initializeApp(config);
+</script>
+  <script type='text/javascript' src='js/dashboard.js'></script>
+</body>
+</html>
