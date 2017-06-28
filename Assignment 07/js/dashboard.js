@@ -1,6 +1,7 @@
 var database = firebase.database();
 var x = location.hash;
 var z = x.substring(1);
+localStorage.setItem("username",z);
 var c = document.getElementById('jumb');
 c.innerHTML=z;
 var container;
