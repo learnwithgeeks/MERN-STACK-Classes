@@ -10,6 +10,11 @@ var checkusernamepassword;
 var usernamecheck;
 var myVar = setInterval(usernames, 10000);
 var passwordcheck;
+document.getElementById('username').addEventListener('keypress', function( event ) {
+    if( event.keyCode > 0 ) {  // return ?
+        document.title = "Forum Application || User - " + this.value;
+    }
+}, false);
 function usernames()
 {
   var suggestion = document.getElementById('suggestionusername');
@@ -65,6 +70,7 @@ function sug(Id)
 {
   username =document.getElementById('username');
   username.value = Id;
+  document.title = "Forum Application || User - " + Id;
   suggestionout();
 }
 function load()
