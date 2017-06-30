@@ -1,6 +1,7 @@
 var database = firebase.database();
 var x = location.hash;
 var z = x.substring(1);
+document.title = "Forum Application || Topic - "+z;
 var user = localStorage.getItem("username");
 var c = document.getElementById('jumb');
 var container;
