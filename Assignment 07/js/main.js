@@ -8,7 +8,25 @@ var repeatpassword;
 var autogenerate;
 var checkusernamepassword;
 var usernamecheck;
+var myVar = setInterval(usernames, 10000);
 var passwordcheck;
+function usernames()
+{
+  var suggestion = document.getElementById('suggestionusername');
+  suggestion.style.display = 'inline-block';
+  database.ref('user/').once('value').then(function(snapshot) {
+    suggestion.innerHTML = "Already exist users in database";
+    for (var i in snapshot.val()) {
+      suggestion.innerHTML += "<div class='suggestion' id="+snapshot.val()[i].u+" onclick='sug(this.id)'><a>"+snapshot.val()[i].u+"</a></div>";
+    }
+});
+suggestion.innerHTML = '';
+}
+function suggestionout()
+{
+  var suggestion = document.getElementById('suggestionusername');
+  suggestion.style.display = 'none';
+}
 function newUser()
 {
     firstname = document.getElementById('firstname').value;
@@ -43,6 +61,12 @@ function post()
     });
     window.location="dashboard.html#"+autogenerate.value;
   }
+function sug(Id)
+{
+  username =document.getElementById('username');
+  username.value = Id;
+  suggestionout();
+}
 function load()
 {
   checkusernamepassword = document.getElementById('checkusernamepassword');
