@@ -1,0 +1,51 @@
+body
+{
+  background-image: url('login.jpg');
+  font-family:cursive;
+  position: relative;
+  overflow: hidden;
+}
+#navbar
+{
+  padding:20px;
+  background-color:rgba(11,11,11,0.5);
+}
+#hello,#greeting
+{
+  color:white;
+}
+#greeting
+{
+  float: right;
+  padding:30px;
+  position: absolute;
+  right:0px;
+  border-bottom-left-radius:10px;
+  background-color:rgba(200,200,200,0.3);
+}
+#sidebar
+{
+  width:20%;
+  background-color:#ecf0f1;
+  border-right:1px solid black;
+  padding-bottom:100%;
+}
+#textdash
+{
+  border-top: 1px solid black;
+  border-collapse: collapse;
+  border-bottom:1px solid black;
+  font-size:35px;
+}
+#dashboard
+{
+  font-size:40px;
+}
+#space
+{
+  padding-bottom:20px;
+}
+#imagespace
+{
+  margin-left:60px;
+}
