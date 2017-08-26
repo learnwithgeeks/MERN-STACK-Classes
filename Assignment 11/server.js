@@ -109,6 +109,7 @@ app.prepare()
   })
    server.post('/logout', (req, res) => {
      req.logout();
+     res.clearCookie('connect.sid');
      res.redirect('/');
    })
   server.get('*', (req, res) => {
