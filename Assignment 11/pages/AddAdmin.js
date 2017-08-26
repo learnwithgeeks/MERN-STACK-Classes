@@ -49,6 +49,8 @@ export default class extends React.Component{
 <div id='space'></div>
     <button type='submit' className='btn btn-info btn-block'>Add Admin</button>
 </form>
+          <div id='space'></div>
+<Link href='/AdminLoggedIn'><a><button className='btn btn-info btn-block'>Back</button></a></Link>
 </div>
             </main>
         )
