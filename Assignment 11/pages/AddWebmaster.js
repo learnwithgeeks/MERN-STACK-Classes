@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Dashboard from '../components/dashboard';
+import axios from 'axios';
 export default class extends React.Component{
   constructor(props)
   {
@@ -8,6 +9,9 @@ export default class extends React.Component{
     this.state = {currentUser:'' ,greeting:''}
   }
   componentWillMount(){
+        axios.get('/userdata').then((response)=>{
+           this.setState({currentUser:JSON.stringify(response.data)})
+       })
     var date=new Date();
        if(date.getHours() <= 6){
            this.setState({greeting:'Good Night'})
@@ -27,7 +31,7 @@ export default class extends React.Component{
           <main>
             <Dashboard/>
             <div id='navbar'>
-    <h2 id='hello'>Hello Admin {this.state.currentUser}</h2>
+    <h2 id='hello'>Welcome Admin {this.state.currentUser}</h2>
     <form method='post' action='/logout'>
         <button type='submit' className='btn btn-success'>Logout</button>
     </form>
@@ -49,6 +53,8 @@ export default class extends React.Component{
 <div id='space'></div>
     <button type='submit' className='btn btn-info btn-block'>Add Webmaster</button>
 </form>
+          <div id='space'></div>
+<Link href='/AdminLoggedIn'><a><button className='btn btn-info btn-block'>Back</button></a></Link>
 </div>
             </main>
         )
