@@ -41,7 +41,8 @@ app.prepare()
 
   server.get('/',(req,res)=>{
       if(req.user){
-          app.render(req,res,'/UserLoggedIn',req.query);
+           var path = fs.readFileSync('./db/path.info','utf-8');
+          app.render(req,res,'/'+path,req.query);
       }
       else{
           res.redirect('/index');
@@ -50,17 +51,23 @@ app.prepare()
 
 
   server.post('/loginUser',passport.authenticate('user',{failureRedirect:'/loginUser'}),(req,res) => {
+          var path="UserLoggedIn";
+    fs.writeFileSync('./db/path.info',path);
     var encrypted = key.encrypt(req.user.username, 'base64');
     fs.writeFileSync('./db/user.info',encrypted);
       res.redirect('/UserLoggedIn');
   })
 
   server.post('/loginAdmin',passport.authenticate('admin',{failureRedirect:'/loginAdmin'}),(req,res) => {
+          var path="AdminLoggedIn";
+    fs.writeFileSync('./db/path.info',path);
     var encrypted = key.encrypt(req.user.username, 'base64');
     fs.writeFileSync('./db/user.info',encrypted);
       res.redirect('/AdminLoggedIn');
   })
   server.post('/loginWebmaster',passport.authenticate('webmaster',{failureRedirect:'/loginWebmaster'}),(req,res) => {
+          var path="loggedIn";
+    fs.writeFileSync('./db/path.info',path);
     var encrypted = key.encrypt(req.user.username, 'base64');
     fs.writeFileSync('./db/user.info',encrypted);
       res.redirect('/loggedIn');
