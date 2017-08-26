@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import axios from 'axios';
 import Dashboard from '../components/dashboard';
 export default class extends React.Component{
   constructor(props)
@@ -8,6 +9,9 @@ export default class extends React.Component{
     this.state = {currentUser:'' ,greeting:''}
   }
   componentWillMount(){
+      axios.get('/userdata').then((response)=>{
+           this.setState({currentUser:JSON.stringify(response.data)})
+       })
     var date=new Date();
        if(date.getHours() <= 6){
            this.setState({greeting:'Good Night'})
