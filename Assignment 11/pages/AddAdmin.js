@@ -31,7 +31,7 @@ export default class extends React.Component{
           <main>
             <Dashboard/>
             <div id='navbar'>
-    <h2 id='hello'>Hello Admin {this.state.currentUser}</h2>
+    <h2 id='hello'>Welcome Admin {this.state.currentUser}</h2>
     <form method='post' action='/logout'>
         <button type='submit' className='btn btn-success'>Logout</button>
     </form>
