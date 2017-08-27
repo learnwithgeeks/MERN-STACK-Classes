@@ -1,0 +1,20 @@
+{
+  "name": "lecture26",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.4",
+    "mongoose": "^4.11.7",
+    "next": "^3.0.3",
+    "node-forge": "^0.7.1",
+    "node-rsa": "^0.4.2",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name":"vivek",
+  "module":
+  {
+    "module1":true,
+    "module2":false
+  }
+}
