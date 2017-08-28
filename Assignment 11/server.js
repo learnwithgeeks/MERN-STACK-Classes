@@ -82,9 +82,11 @@ app.prepare()
       user.username = req.body.username;
       user.password = req.body.password;
       user.role = "User";
+      var encrypted = key.encrypt(req.body.username, 'base64');
+      fs.writeFileSync('./db/user.info',encrypted);
       user.save((err,user) => {
           if(err){console.error("Error: ", err)}
-          else{res.redirect('/UserLoggedIn')}
+          else{res.redirect('/loginUser')}
       })
   })
   server.post('/AddAdmin',(req,res) => {
