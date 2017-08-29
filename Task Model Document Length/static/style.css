@@ -1,0 +1,35 @@
+body
+{
+  overflow:hidden;
+  background-image: url('ecommerce.jpg');
+  background-repeat: no-repeat;
+  background-size:100%;
+  background-origin: padding-box;
+  position: relative;
+  font-family: cursive;
+}
+#sidebar
+{
+  background-color:#ecf0f1;
+  width:20%;
+  padding-top:40px;
+  margin-top:-20px;
+  padding-bottom:80%;
+}
+#sidebar:hover
+{
+  border-radius:20px;
+  background-color:rgba(11,11,11,0.2);
+}
+#indexlogin
+{
+  padding:20px;
+  width:34%;
+  position: absolute;
+  top:250px;
+  left:445px;
+}
+#indexlogin #space
+{
+  padding:15px;
+}
