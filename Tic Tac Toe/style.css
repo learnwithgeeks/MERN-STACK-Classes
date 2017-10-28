@@ -1,0 +1,51 @@
+  html{
+    width:100%;
+    height:100%;
+    background:linear-gradient(#f7aeb7, #ffcccc, #ffeee6);
+  }
+p {
+    margin-left:-210px;
+    position:absolute;
+    font-size: 900%;
+    left:40%; 
+  }
+  .dots{
+    display:inline-block;
+    background:white;
+    height:100px;
+    width:100px;
+    float: left;
+    border: 1px solid #333;
+  }
+  .dots2{
+    display:inline-block;
+    background:#333;
+    border: 1px solid white;
+    height:100px;
+    width:100px;
+    float: right;
+  }
+  
+  .guys{
+    position:absolute;
+    height:100px;
+    width:350px;
+    top:400px;
+    left:50%;
+    margin-left:-175px;
+  }
+  
+  td {
+  height: 100px;
+  width: 100px;
+  border-style: solid;
+  border-color:  #333;
+  border-width: 15px;
+  visibility: hidden;
+  }
+  
+  table{
+    position:absolute;
+    left:40%;
+    top:20%;
+  }
