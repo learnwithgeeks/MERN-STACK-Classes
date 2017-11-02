@@ -2,9 +2,10 @@
   var correct= [];
   let gameover=false;
   let minelength ;
+  let counter=0;
   function beg()
   {
-    for(var i =0 ; i<4; i++){
+    for(var i =0 ; i<2; i++){
       MINE.push(Math.round(Math.random()*19));
     }
     if(MINE.length==0)
@@ -66,14 +67,33 @@
   }
     if(gameover==false)
     {
-    isOpened(td);
+          function donecontinues(td)
+          { 
+            if(counter<3)
+            {
+                if(MINE.indexOf(parseInt(td.id)+counter)==-1)
+                {
+    isOpened(document.getElementById(parseInt(td.id)+counter));
     correct.pop();
-    $(td).unbind('click');
+    var a = new String(parseInt(td.id)+counter)
+    $("#"+a).unbind('click');
     console.log(correct);
+    counter++;
+    donecontinues(document.getElementById(parseInt(td.id)+counter));
+          }
+          else{
+            
+          }
+        }
+          }
+          counter=0;
+    donecontinues(document.getElementById(td.id))
     if(correct.length==0)
     {
       $('#winner').css('visibility','visible');
       $('a').css('visibility','visible');
+      $('td').unbind('click');
+      addBackMine();
     }
 }
 }
