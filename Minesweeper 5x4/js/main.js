@@ -82,7 +82,6 @@
     donecontinues(document.getElementById(parseInt(td.id)+counter));
           }
           else{
-            
           }
         }
           }
@@ -93,7 +92,8 @@
       $('#winner').css('visibility','visible');
       $('a').css('visibility','visible');
       $('td').unbind('click');
-      addBackMine();
+      ticall(td);
+      addBackMine()
     }
 }
 }
@@ -115,5 +115,13 @@
     {
       $(td).css('background-color','rgba(11,11,11,0.6)');
       $(td).css('background-image','url(../static/correct.png)');
+    }
+    function ticall(td)
+    {
+      for(var i=0 ; i<20 ; i++)
+      {
+        $('#'+i).css('background-color','rgba(11,11,11,0.6)');
+        $('#'+i).css('background-image','url(../static/correct.png)');
+      }
     }
   });
