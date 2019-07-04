@@ -4,13 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "start": "next"
+    "start": "next",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "next": "^2.4.7",
     "react": "^15.6.1",
-    "react-dom": "^15.6.1"
-  }
+    "react-dom": "^15.6.1",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
