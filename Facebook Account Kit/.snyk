@@ -1,8 +1,13 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.13.3
+version: v1.13.5
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   SNYK-JS-AXIOS-174505:
     - axios:
         patched: '2019-05-06T05:14:33.473Z'
+  SNYK-JS-HTTPSPROXYAGENT-469131:
+    - next > glob-promise > semantic-release > github > https-proxy-agent:
+        patched: '2019-10-04T05:02:17.542Z'
+    - next > glob-promise > semantic-release > @semantic-release/condition-travis > github > https-proxy-agent:
+        patched: '2019-10-04T05:02:17.542Z'
