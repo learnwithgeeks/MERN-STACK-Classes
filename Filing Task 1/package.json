@@ -4,7 +4,9 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +17,8 @@
     "node-forge": "^0.7.1",
     "node-rsa": "^0.4.2",
     "react": "^15.6.1",
-    "react-dom": "^15.6.1"
-  }
+    "react-dom": "^15.6.1",
+    "snyk": "^1.230.5"
+  },
+  "snyk": true
 }
