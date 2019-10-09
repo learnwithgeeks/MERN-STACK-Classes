@@ -16,7 +16,7 @@
     "express": "3.x",
     "guid": "0.0.12",
     "mustache": "^2.2.1",
-    "next": "^4.1.4",
+    "next": "^5.0.0",
     "querystring": "^0.2.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
