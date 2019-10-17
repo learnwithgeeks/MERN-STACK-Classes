@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.15.4",
-    "mongoose": "^4.11.7",
+    "mongoose": "^5.7.5",
     "next": "^4.2.3",
     "node-forge": "^0.7.1",
     "node-rsa": "^0.4.2",
