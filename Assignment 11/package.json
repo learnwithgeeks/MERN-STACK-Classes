@@ -12,7 +12,7 @@
     "express-passport-logout": "^0.1.0",
     "express-session": "^1.15.5",
     "fs": "0.0.1-security",
-    "mongoose": "^4.11.5",
+    "mongoose": "^5.4.10",
     "next": "^2.4.9",
     "node-rsa": "^0.4.2",
     "passport": "^0.3.2",
